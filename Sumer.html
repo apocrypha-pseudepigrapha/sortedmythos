@@ -1,0 +1,104 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <style>
+header {
+  background-color: grey;
+  height: 65px;
+  display:block;
+  top:0px;
+  left:0px;
+  right:0px;
+  margin: auto;
+  text-align:center;
+  font-size:25px;
+  border-style: double;
+  border-width: 4px;
+  color:black;
+}
+
+p {
+  position:block;
+  font-size: 15px;
+  display: block;
+  padding: 5px;
+  color:black;
+  text-align: center;
+  }
+
+ .grid-container {
+    display:grid;
+    gap:5px;
+    grid-template-rows: auto;
+    grid-template-columns: 33% 33% 33% ;
+    margin: auto;
+  }
+
+.grid-item{
+    color:black;
+    font-size: 20px;
+    border:4px double black;
+    background-color: lightgrey;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: auto;
+}
+
+a:hover {
+  color:blue;
+}
+
+
+details > p {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    height: 200px;
+    margin: auto;
+    overflow: auto;
+    margin-top:0px;
+}
+
+details[open] summary {
+  border-bottom: 4px double black;
+}
+
+details > summary {
+  list-style: none;
+}
+   
+ </style>
+  </head>
+
+<header> Sumerian Myths </header>
+
+<p> Sort by Deity/Hero</p>
+
+<div class="grid-container"> 
+<span> <div class="grid-item"><details>
+<summary>Gilgamesh</summary>
+<p> The Epic of Gilgamesh <br><br> Gilgamesh, Enkidu, and the Netherworld <br><br> Gilgamesh and Huwawa </p></details></div></span>
+
+<span><div class="grid-item"><details>
+<summary>Enki </summary>
+<p> Enki and the world order <br><br> Enki and Nihursaga </p></details></div></span>
+
+<span><div class="grid-item"> <details>
+<summary>Enlil</summary>
+<p> Enlil and Ninlil <br><br> Enlil and Sud</p></details></div> </span>
+
+<span><div class="grid-item"> <details>
+<summary> Inana </summary>
+<p> Inana and Enki <br><br> Inana and Sud </p></details></div></span>
+</div>
+
+
+
+
+
+
+
+
