@@ -3,11 +3,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <style>
-   header {
+header {
   background-color: grey;
   height: 65px;
   display:block;
-  position:fixed;
   top:0px;
   left:0px;
   right:0px;
@@ -18,19 +17,81 @@
   border-width: 4px;
   color:black;
 }
+
 p {
-  position: relative;
-  top:65px;
+  position:block;
   font-size: 15px;
   display: block;
   padding: 5px;
   color:black;
+  text-align: center;
+  }
+
+ .grid-container {
+    display:grid;
+    gap:5px;
+    grid-template-rows: auto;
+    grid-template-columns: 33% 33% 33% ;
+    margin: auto;
+  }
+
+.grid-item{
+    color:black;
+    font-size: 20px;
+    border:4px double black;
+    background-color: lightgrey;
+    text-align: center;
+    display: block;
+    margin: auto;
+    width: 90%;
+    height: auto;
 }
+
+a:hover {
+  color:blue;
+}
+
+
+details > p {
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    height: 200px;
+    margin: auto;
+    overflow: auto;
+    margin-top:0px;
+}
+
+details[open] summary {
+  border-bottom: 4px double black;
+}
+
+details > summary {
+  list-style: none;
+}
+   
  </style>
   </head>
 
 <header> Legends and </br> Mythologies </header>
+<p><!-- make a summary when youre literate--></p>
+<p> Sort by Area/Religion </p>
+<!-- alphebetize -->
+<div class="grid-container">
+<!--  <a href="" class="grid-item">Sumerian</a> -->
+  <div class="grid-item">Christian</div>
+  <div class="grid-item">Greek</div>
+   <div class="grid-item">Roman</div>
+  <div class="grid-item">Jewish</div>
+  <div class="grid-item">Egyptian</div>
+</div>
 
+<p> Collections <p>
+<div class="grid-container">
+  <div class="grid-item">floods</div>
+  <div class="grid-item">strongman</div>
+  <div class="grid-item">etc</div>
+</div>
 
 
 
